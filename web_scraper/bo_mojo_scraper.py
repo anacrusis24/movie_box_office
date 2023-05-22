@@ -18,7 +18,7 @@ from bs4 import BeautifulSoup
 
 # set the number of retries
 retries = Retry(total=5,
-                backoff_factor=3,
+                backoff_factor=120,
                 status_forcelist=[500, 502, 503, 504])
 
 # make df to hold all the data
